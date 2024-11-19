@@ -39,3 +39,32 @@ Ensure you have the following dependencies installed:
    ```bash
    git clone <repository-url>
    cd <repository-name>
+
+
+### Install the necessary Python libraries
+``` bash
+ pip install opencv-python-headless numpy mediapipe scipy ultralytics
+```
+# Tải xuống mô hình YOLO ( yolo11n.pt) và đặt nó vào thư mục dự án
+
+# Tạo các thư mục cần thiết
+``` bash
+mkdir tracked_objects 3d_image_data
+```
+
+# Thêm hình ảnh khuôn mặt tham chiếu vào 3d_image_datathư mục để so sánh.
+
+### Cách sử dụng
+
+# Chạy tập lệnh
+``` bash
+python real_time_tracking.py
+
+```
+# Hệ thống sẽ:
+
+Mở nguồn cấp dữ liệu camera thời gian thực.
+Phát hiện và theo dõi con người.
+Thực hiện nhận dạng khuôn mặt.
+Lưu các khuôn mặt không trùng khớp vào tracked_objectsthư mục.
+# Nhấn q để thoát khỏi ứng dụng.
