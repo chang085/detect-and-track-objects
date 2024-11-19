@@ -68,3 +68,13 @@ Phát hiện và theo dõi con người.
 Thực hiện nhận dạng khuôn mặt.
 Lưu các khuôn mặt không trùng khớp vào tracked_objectsthư mục.
 # Nhấn q để thoát khỏi ứng dụng.
+## Cấu trúc thư mục
+- tracked_objects/: Lưu trữ hình ảnh khuôn mặt không khớp.
+- 3d_image_data/: Bao gồm hình ảnh khuôn mặt tham chiếu được sử dụng để so sánh.
+# Tùy chỉnh
+- Mô hình YOLO : Thay thế yolo11n.ptbằng mô hình được đào tạo trên một tập dữ liệu cụ thể nếu cần.
+- Ngưỡng nhận dạng khuôn mặt : Điều chỉnh ngưỡng tương đồng (hiện tại 0.8) trong extract_face_embeddingschức năng để khớp chặt chẽ hơn hoặc lỏng lẻo hơn.
+- Giới hạn lưu khuôn mặt : Sửa đổi giới hạn lưu (hiện tại 10) trong logic lưu khuôn mặt không khớp.
+## IV. Tổng kết
+
+Dự án này nhằm phát hiện và theo dõi người xuất hiện trong hình trong thời gian thực, đồng thời thực hiện nhận dạng đối tượng . Hệ thống này cấp nhiều tính năng để người dùng có thể theo dõi và nhận dạng đối tượng. Nếu bạn có bất kỳ câu hỏi hoặc góp ý nào, vui lòng liên hệ với chúng tôi qua email: 22010085@st.phenikaa-uni.edu.vn
